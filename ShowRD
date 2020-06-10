@@ -26,7 +26,7 @@ public class ShowRD {
     try {
       content = new String(Files.readAllBytes(Paths.get(System.getProperty("user.home")+"\\Dropbox\\"+"output.txt")));
       //the output.txt is decrypted here
-      content = AES.decrypt(content, IP.secretKey);  
+      content = AES.decrypt(content, PIP.secretKey);  
       }
       catch(IOException e) {
       e.printStackTrace();
